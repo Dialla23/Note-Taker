@@ -1,5 +1,6 @@
 var path = require("path");
 var router = require("express").Router();
+const htmlRoutes = require("./Develop/public/routes/htmlRoutes")
 
 // "/notes" responds with the notes.html file
 router.get("/notes.html", function(req, res) {
