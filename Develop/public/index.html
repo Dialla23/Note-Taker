@@ -22,6 +22,16 @@
     </div>
   </div>
   <script src="/assets/js/index.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("service-worker.js")
+          .then(() => {
+            console.log("Service worker installed")
+          })
+      });
+    }
+  </script>
 </body>
 
 </html>
